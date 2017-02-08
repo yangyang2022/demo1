@@ -1,0 +1,56 @@
+<component name="libraryTable">
+  <library name="Maven: javax.validation:validation-api:1.1.0.Final">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar!/" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/documentation/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine-jdk8-tests/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/integration/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/osgi/integrationtest/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/performance/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/test-utils/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/documentation/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine-jdk8-tests/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/integration/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/osgi/integrationtest/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/performance/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/test-utils/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist/hibernate-validator-5.3.4.Final/dist/hibernate-validator-5.3.4.Final.jar!/" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/annotation-processor/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/cdi/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/documentation/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine-jdk8-tests/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/engine/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/integration/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/osgi/integrationtest/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/performance/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/main/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/tck-runner/src/test/java" />
+      <root url="jar://D:/javatools/maven/lib/hibernate/hibernate-validator-5.3.4.Final-dist.zip!/hibernate-validator-5.3.4.Final/project/test-utils/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

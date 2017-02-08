@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model">
+
+    <class name="com.yangyang.model.xml.Item" table="t_item" dynamic-update="true">
+
+        <id name="id" type="java.lang.Integer">
+            <column name="item_id"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+        </id>
+
+        <property name="itemName" column="item_name" type="java.lang.String" />
+
+        <set name="categories" table="cat_item" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <many-to-many column="c_id" class="com.yangyang.model.xml.Category" />
+        </set>
+    </class>
+
+</hibernate-mapping>

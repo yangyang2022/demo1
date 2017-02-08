@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model">
+
+    <class name="com.yangyang.model.xml.Paper" table="t_pager" dynamic-update="true">
+    	
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native" />
+        </id>
+    
+        <property name="title" not-null="true" unique="true"
+        	index="news_index" length="50"
+        	type="java.lang.String" column="TITLE" >
+        </property>
+        
+        <property name="author" type="java.lang.String"
+        	index="news_index">
+            <column name="AUTHOR" />
+        </property>
+        
+        <property name="data" column="Date" type="LocalDateTime" />
+
+        <!-- don't have column-->
+        <property name="desc"
+        	formula="(select concat(author,':',title) from t_pager p where p.id=id)">
+        </property>
+		
+		<property name="content">
+			<column name="CONTENT" sql-type="text"></column>
+		</property>
+		
+		<property name="pic" column="PICTURE" type="blob"></property>
+		
+    </class>
+    
+</hibernate-mapping>

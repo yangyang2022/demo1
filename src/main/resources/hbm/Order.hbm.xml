@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model.xml">
+
+    <class name="Order" table="t_order" dynamic-update="true">
+
+        <id name="order_id" type="java.lang.Integer">
+            <column name="order_id"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+        </id>
+        <!-- 使用二级缓存 -->
+        <!--<cache usage="read-only" />-->
+
+        <property name="order_name" column="order_name" type="java.lang.String"/>
+
+        <many-to-one name="customer" class="Customer" column="customer_id" fetch="join"/>
+    </class>
+
+</hibernate-mapping>

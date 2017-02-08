@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model.xml">
+
+    <class name="Customer" table="t_customer" dynamic-update="true" lazy="false" batch-size="5">
+
+        <id name="customer_id" type="java.lang.Integer">
+            <column name="ID"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+        </id>
+
+        <property name="name" column="customer_name" type="java.lang.String"/>
+
+        <!-- delete-orphan delete orphan object -->
+        <!-- cascade="delete"  batch-size="5"  -->
+        <set name="orders" table="t_order" inverse="true" lazy="true" fetch="join">
+            <key column="customer_id" />
+            <one-to-many class="Order" />
+        </set>
+    </class>
+
+</hibernate-mapping>

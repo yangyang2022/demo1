@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model.hqlDemo2">
+
+    <class name="Employee" table="t_employee" dynamic-update="true">
+
+        <!--<cache usage="read-only" />-->
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="native"/>
+        </id>
+
+        <property name="name" column="NAME" type="java.lang.String" />
+        <property name="email" column="EMAIL" type="java.lang.String" />
+        <property name="salary" column="SALARY" type="java.lang.Float" />
+
+        <many-to-one name="department" column="dept_id" />
+
+    </class>
+    
+    <query name="salaryEmps"><![CDATA[from Employee e where e.salary > :minSalary AND e.salary < :maxSalry]]></query>
+
+</hibernate-mapping>

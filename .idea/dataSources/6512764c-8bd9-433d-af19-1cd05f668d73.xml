@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mysql57">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="hibernate5">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="jpa"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="spa"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="test"/>
+    <table id="10" parent="2" name="news"/>
+    <table id="11" parent="2" name="t_classroom"/>
+    <table id="12" parent="2" name="t_customer"/>
+    <table id="13" parent="2" name="t_order"/>
+    <table id="14" parent="2" name="t_pager"/>
+    <table id="15" parent="2" name="t_student"/>
+    <table id="16" parent="2" name="t_work"/>
+    <column id="17" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="10" name="author">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="data">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="20" parent="10" name="title">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="21" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="11" name="clz_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="24" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="12" name="customer_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="27" parent="12" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="13" name="order_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="13" name="order_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="13" name="customer_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="31" parent="13" name="FKesy3n2gc3fa0s3trrk3tvyv9a">
+      <ColNames>customer_id</ColNames>
+    </index>
+    <key id="32" parent="13" name="PRIMARY">
+      <ColNames>order_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="33" parent="13" name="FKesy3n2gc3fa0s3trrk3tvyv9a">
+      <ColNames>customer_id</ColNames>
+      <RefSchemaName>hibernate5</RefSchemaName>
+      <RefTableName>t_customer</RefTableName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="34" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="35" parent="14" name="TITLE">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="14" name="AUTHOR">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="37" parent="14" name="Date">
+      <Position>4</Position>
+      <DataType>datetime(6)|0</DataType>
+    </column>
+    <column id="38" parent="14" name="CONTENT">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="39" parent="14" name="PICTURE">
+      <Position>6</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <index id="40" parent="14" name="news_index">
+      <ColNames>TITLE
+AUTHOR</ColNames>
+    </index>
+    <index id="41" parent="14" name="UK_jc8a154m88yrkuijodpick1wc">
+      <ColNames>TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="14" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="43" parent="14" name="UK_jc8a154m88yrkuijodpick1wc">
+      <ColNames>TITLE</ColNames>
+      <UnderlyingIndexName>UK_jc8a154m88yrkuijodpick1wc</UnderlyingIndexName>
+    </key>
+    <column id="44" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="45" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="46" parent="15" name="clz_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="47" parent="15" name="FKhy22y9lrwbatg7ps4vcal8ej8">
+      <ColNames>clz_id</ColNames>
+    </index>
+    <key id="48" parent="15" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="15" name="FKhy22y9lrwbatg7ps4vcal8ej8">
+      <ColNames>clz_id</ColNames>
+      <RefSchemaName>hibernate5</RefSchemaName>
+      <RefTableName>t_classroom</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="50" parent="16" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="16" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="16" name="MONTH_PAY">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="16" name="YEAR_PAY">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="16" name="VACATIONWITH_PAY">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="55" parent="16" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

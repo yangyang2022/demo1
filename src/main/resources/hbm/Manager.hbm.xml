@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model">
+
+    <class name="com.yangyang.model.xml.Manager" table="t_manager" dynamic-update="true">
+
+        <id name="managerId" type="java.lang.Integer">
+            <column name="manager_id"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+            <!--<generator class="foreign">-->
+                <!--<param name="property">manager</param>-->
+            <!--</generator>-->
+        </id>
+
+        <property name="managerName" column="manager_name" type="java.lang.String"/>
+
+        <one-to-one name="depart" class="com.yangyang.model.xml.Depart" property-ref="manager" />
+
+    </class>
+
+</hibernate-mapping>

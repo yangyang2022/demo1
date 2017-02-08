@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model">
+
+    <class name="com.yangyang.model.xml.Depart" table="t_depart" dynamic-update="true">
+
+        <id name="depId" type="java.lang.Integer">
+            <column name="dept_id"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+        </id>
+
+        <property name="depName" column="depart_name" type="java.lang.String"/>
+        
+        <many-to-one name="manager" class="com.yangyang.model.xml.Manager" column="manager_id" unique="true"/>
+
+    </class>
+
+</hibernate-mapping>

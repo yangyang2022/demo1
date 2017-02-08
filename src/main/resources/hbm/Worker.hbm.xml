@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model">
+
+    <class name="com.yangyang.model.xml.Worker" table="t_work" dynamic-update="true">
+
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <!-- 指定主键的生成方式, native: 使用数据库本地方式 -->
+            <generator class="native"/>
+        </id>
+
+        <property name="name"  type="java.lang.String" not-null="true"/>
+
+        <!-- 映射组成关系不能使用property -->
+        <component name="pay" class="com.yangyang.model.xml.Pay">
+            <property name="monthPay" column="MONTH_PAY" />
+            <property name="yearPay" column="YEAR_PAY" />
+            <property name="vocationWithPay" column="VACATIONWITH_PAY" />
+        </component>
+    </class>
+
+</hibernate-mapping>

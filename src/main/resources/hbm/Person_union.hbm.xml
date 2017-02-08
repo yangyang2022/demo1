@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.yangyang.model.subClass">
+
+    <class name="Person" table="t_person" >
+
+        <id name="id" type="java.lang.Integer">
+            <column name="person_id"/>
+            <generator class="increment"/>
+        </id>
+
+        <property name="name" column="NAME" type="java.lang.String"/>
+        <property name="age" column="AGE" type="java.lang.Integer"/>
+
+        <!--<joined-subclass name="Student" table="t_student">-->
+            <!--<key column="stu_id" />-->
+            <!--<property name="school" column="SCHOOL" type="java.lang.String" />-->
+        <!--</joined-subclass>-->
+
+        <union-subclass name="Student" table="t_student">
+            <property name="school" column="SCHOOL" type="java.lang.String" />
+        </union-subclass>
+
+    </class>
+
+</hibernate-mapping>

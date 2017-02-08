@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Js1</title>
+    <script type="text/javascript" src="../util/log.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-3.1.1.js"></script>
+    <!--<script src="https://code.jquery.com/qunit/qunit-2.1.1.js"></script>-->
+    <!--<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.1.1.css">-->
+    <script type="text/javascript">
+
+        function assert(value, desc) {
+            var li = document.createElement("li");
+            li.className = value ? "pass" : "fail";
+            li.appendChild(document.createTextNode(desc));
+            document.getElementById("result").appendChild(li)
+        }
+        function print(obj) {
+            alert(obj)
+        }
+        function unless(callback) {
+            return callback()
+        }
+
+        function outer() {
+            print(typeof inner)
+            var a = 1;
+            function inner() {
+                var b = 2;
+                if(a == 1){
+                    var  c = 3
+                }
+            }
+        }
+
+//        function creep() {
+//            return this;
+//        }
+////        assert(creep() === window,"creep() in the window");
+//        print(creep());
+//        var niajia1={
+//            skull:creep
+//        }
+//        print(niajia1.skull())
+
+
+        window.onload = function () {
+
+//            assert(true,"the test is pass")
+//            assert(false,"Fail!")
+
+//            QUnit.test( "a basic test example", function( assert ) {
+//                var value = "hello";
+//                assert.equal( value, "hello", "We expect value to be hello" );
+//            });
+
+//            var text = "hello javascript"
+//            assert(unless(function () {
+//                return text;
+//            }) == text ," the unlessFunction work! "+text)
+
+//            var values = [213,16,2058,54,10,1965,57,9];
+//
+//            var sorted1 = values.sort(function (a, b) {
+//                return a-b
+//            });
+//
+//            print(sorted1)
+//
+//            var sorted2 = values.sort(function (a,b) {
+//                return b - a
+//            })
+//            print(sorted2)
+//            outer()
+
+            function Niajia() {
+                this.skulk = function () {
+                    return this;
+                }
+            }
+            var niajia1 = new Niajia();
+            var niajia2 = new Niajia();
+
+            assert(niajia1.skulk() == niajia1 ,"ok ");
+            assert(niajia2.skulk() == niajia2 ,"ok ");
+
+        }
+    </script>
+    <style>
+        #result li.pass {color:green}
+        #result li.fail {color:red}
+    </style>
+</head>
+<body>
+    <ul id="result"></ul>
+</body>
+</html>
